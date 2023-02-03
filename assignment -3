@@ -1,0 +1,40 @@
+in Package : in script we can write the commands for the start of the app
+babel plugin trasform remove plugin removes console
+
+Render - update something in dom
+ Babel is compiler/traspiler
+react.create element gives us an object
+ 
+ JSx - react .create element is difficult for complex files
+ so to update html with js, jsx came into picture
+ JSX is not html in JS
+ IT is html like structure or syntax
+
+  let heading = <h1>HEading</h1>  // here heading is an object..This object will be rendered as html in dom
+  \
+  jsx is understood by babel n not the brwser
+  JSX is converted into react.createElement by babel 
+  babel comes along with parcel
+
+  nodemodule also has a package.json..it has the the details of trasitive dependencies
+
+  react component is  a normal JS function, which return jsx/react element or another component
+
+
+  React Element: root.render(heading)
+  React component: root.render(<Heading />)
+
+  to use react element in a component
+  {heading}
+  if it is component n we need to call inside another component
+  {Heading()} or <Heading />
+
+
+  jsx sanitizes tha JS code inside it
+
+
+
+  1. What is JSX?
+     const element = <h1>Hello, world!</h1>;
+     It is a syntax extension to JS
+     IT is neither a string nor html

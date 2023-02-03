@@ -1,0 +1,32 @@
+hook is normal function that has specific function
+React components maitain the variable in the form of state
+const [data,setData] = useState("")
+data is variable name..we cannot set the value of data directly
+
+This data can be set by the function satData
+
+if there is any  change in the variable, react cannot keep the track of the change..so it will not rerender and it cannot be updated on UI
+so state is used..so any change in state, react will track it
+
+//console.log(true) its boolean..so true will not be printed 
+
+
+1. Difference b/w named export and default export?
+  named export = > Mny components or constants can be exported as named export from a file
+                    It has to imported inside {}
+  Default export => only one component can be sent as default export
+                    can be imported with same name or differnt name without {}  
+
+
+2. Importance of Config.js file:
+    all the hard coded informations can be stored in config.js
+     like base url, data etc
+
+3. What is reack Hook?
+     They are functions
+     They can be used only inside functional component and not in class components
+     Hooks allow us to "hook" into React features such as state and lifecycle methods.
+
+4. Why do we need a useState hook?
+       To set the state of a variable and to alter it 
+ 

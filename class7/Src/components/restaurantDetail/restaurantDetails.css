@@ -1,0 +1,19 @@
+.restaurantDetails{
+    display: flex;
+    padding: 2rem;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.rightRest{
+    display: flex;
+    flex-direction: column;
+}
+
+.rightRest ul{
+    display: flex;
+    flex-direction: column;
+    list-style: circle; 
+}

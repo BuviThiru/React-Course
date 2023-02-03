@@ -1,0 +1,48 @@
+1.What is emment?
+Emmet is a pugin used in most of the code editors which provides the code snippets used frequently to increase the productivity of a devveloper
+
+2.Difference between a Library and Framework?
+Both are codes written by some one to make a function easy
+library - like a furniture
+framework  - like a model home..architecture is fixed
+
+technical differance lies in the inversion of control
+Frame work decides the flow of the application where as in library, the developer decides the flow of the application.
+
+React is a library
+
+3.What is CDN? Why do we use it?
+      CDN means content delivery network
+      It refers to group of servers which work together to fast deliver a content
+      CDN helps the users to access the content from the nearby cdn server rather from the source  
+
+4. Why is React known as React?
+React is used to build front end part..when user communicates it has to react..So its named as React
+
+5.What is crossorigin in script tag?
+crossOrigin attibute sets the mode of request to HTTP CORS Request.
+when crossorgin is given it supports cors...
+cors - cross orgin resource sharing
+When a webpage is loaded from a server, sometimes the cross orgin request goes to other server /domail for an image or file..this is supported
+
+The crossorigin attribute specifies that the script element supports CORS.
+
+CORS stands for Cross Origin Resource Sharing.
+
+CORS is a standard mechanism to retrieve files from a third party domain or server.
+
+If specified, the script file request will be sent with or without credentials.
+
+
+6.What is diference between React and ReactDOM?
+React is a JavaScript library for building User Interfaces and 
+ReactDOM is the JavaScript library that allows React to interact with the DOM.
+
+
+7.What is difference between react.development.js and react.production.js files via CDN?
+
+The development build is used - as the name suggests - for development reasons. You have Source Maps, debugging and often times hot reloading ability in those builds.
+
+The production build, on the other hand, runs in production mode which means this is the code running on your client's machine. The production build runs uglify and builds your source files into one or multiple minimized files. It also extracts CSS and images and of course any other sources you're loading with Webpack. 
+
+production build has uglier code but it is faster

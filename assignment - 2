@@ -1,0 +1,53 @@
+1. What is `NPM`?
+         npm is an open source software registery, where we can share or borrow packages...
+         IT doest stand for node package manager
+2. What is `Parcel/Webpack`? Why do we need it?
+        Thay are bundlers.. It helps to minify the code,does tree shaking, otimizes image uplading, does HMR(hot module Replacemtn)
+        has file watchers, etc..This makes react app super powerful
+3. What is `.parcel-cache`?
+            .parcel-cache stores various informations about the project, when parcel build it.... During second build, it lates less time because everything
+       is not buit from scratch rather its done from parcel-cache...
+4. What is `npx` ?
+     npx is node package execute..It helps to execute the node packagers...
+     When npm is installed, npx is automatically installed with it 
+5. What is difference between `dependencies` vs `devDependencies`?
+     Dependencies - are the packages that are required for the application
+     devDependencies are the packages that are needed for development only in local development and testing
+6. What is Tree Shaking?
+      Tree shaking is the removal of dead codes or unwanted codes
+      Bundlers like Parcel does it
+7. What is Hot Module Replacement?
+        Hot module replacemnt enables add, replacemnt of module while running an application without completely reloading it..
+
+8. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
+    Assigns the port, tree shaking, minifies the file, compress the images n videos, caching while development
+
+9. What is `.gitignore`? What should we add and not add into it?
+       .gitignore file has the list of file or folders that need not be added into git
+        . Anything that can be regenrated can be added in gitignore
+
+10. What is the difference between `package.json` and `package-lock.json`
+     Package-json has the information of all the dependencies
+     Package-json locks the information of version..So we can have the same version in different environments
+
+11. Why should I not modify `package-lock.json`?
+    It is a generated file and is not designed to be manually edited. Its purpose is to track the entire tree of dependencies (including dependencies of dependencies) and the exact version of each dependency. 
+
+12. What is `node_modules` ? Is it a good idea to push that on git?
+  node modules has files/folders which contain the code for a particular dependency installed to perform a specific function...
+  It also includes the code of dependency's dependency
+
+  It is very heavy and can be genrated easily with the help of package.json
+  so not a good idea to move into git
+
+13.What is the `dist` folder?
+    Dist folder contains the minimized version of source code...
+    IT is the code which is actually used in the production web application.
+14. What is `browserlists`?
+    BrowserLists specify which version to be allowed to use the web application..The particular web application will be compatable to the browserlist specified..
+
+
+Read about dif bundlers: vite, webpack, parcel
+● Read about: ^ - caret and ~ - tilda
+● Read aboutcls
+(MDN Docs)

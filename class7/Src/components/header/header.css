@@ -1,0 +1,28 @@
+.header{
+    height: 50px;
+    padding: 10px;
+    background-color:  rgb(79, 145, 115);
+    margin:0;
+    display: flex;
+   justify-content: space-around;
+   color: white;
+}
+
+.logo{
+    height:50px;
+}
+
+.list{
+    display:flex;
+    list-style: none;     
+}
+
+.list li{
+    margin:10px;
+ }
+
+.list li a{
+    text-decoration: none;
+    color: white;
+}
+

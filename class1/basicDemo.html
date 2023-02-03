@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React Demo Page</title>
+</head>
+<body>
+    <div id ='root'>
+   <p>Hello i am in html</p>
+    <!-- //everything in the root will be overrided by render -->
+    </div>
+</body>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script>
+    let heading1 = document.createElement("h1")
+    heading1.innerHTML = "My first heading"
+    let root1 = document.getElementById("root")
+    root1.appendChild(heading1)
+
+
+    let heading = React.createElement("h1",{id:"Heading"},"Hello by React!!!");//react element is an object
+    let root = ReactDOM.createRoot(document.getElementById("root"));
+    // root.render(heading);//render adds into dom
+    let heading2 = React.createElement("h2",{id:"Heading2"},"Hello  again by React!!!");//react element is an object
+  
+    // root.render([heading,heading2]); //render will take many arguments inside an array
+
+    let container = React.createElement("div",{id:"container"},[heading,heading2])
+    root.render(container)
+    
+</script>
+</html>
