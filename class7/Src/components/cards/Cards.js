@@ -1,5 +1,5 @@
 import "./cards.css"
-import {imgURL} from '../../constants'
+import {imgURL} from '../../utilities/constants'
 
 const Cards = ({item})=>{
     // console.log(item)

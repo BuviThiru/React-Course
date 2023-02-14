@@ -1,25 +1,15 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { Restaurant_Details_URl, imgURL } from '../../constants'
+import { imgURL } from "../../utilities/constants"
+import useRestaurant from "../../utilities/useRestaurant"
 import './restaurantDetails.css'
 
 const RestaurantDetail = () => {
-    const [restaurantDetails, setRestaurentDetails] = useState(null)
     let { id } = useParams()
-    console.log(restaurantDetails)
+    
+    let restaurantDetails = useRestaurant(id)
+   
 
-    useEffect((() => {
-        fetchData()
-    }), [])
-
-    async function fetchData() {
-        let data = await fetch(Restaurant_Details_URl + id)
-        // console.log(data)
-        let json = await data.json()
-        setRestaurentDetails(json.data)
-    }
-    // let val = Object.values(restaurantDetails.menu.items)
-    //  console.log(val)
   if(!restaurantDetails) return null
     return (
         <div className="restaurantDetails">
